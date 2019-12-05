@@ -12,7 +12,7 @@ public class TodoEvent {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
     private String name;
-    private Date taskDate;
+    private String date;
     private String description;
 
     public int getId() {
@@ -31,12 +31,12 @@ public class TodoEvent {
         this.name = name;
     }
 
-    public Date getDate() {
-        return taskDate;
+    public String getDate() {
+        return date;
     }
 
-    public void setDate(Date date) {
-        this.taskDate = date;
+    public void setDate(String date) {
+        this.date = date;
     }
 
     public String getDescription() {

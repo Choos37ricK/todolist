@@ -12,9 +12,9 @@
         <form>
             <h2>Добавление задачи</h2>
             <label>Название задачи:</label>
-            <input type="text" name="name" value="">
+            <input type="text" name="name" value="" required>
             <label>Дата задачи:</label>
-            <input type="text" name="taskDate" value="">
+            <input type="text" name="date" value="" placeholder="гг.ММ.дд" required pattern="(19|20)\d\d-((0[1-9]|1[012])-(0[1-9]|[12]\d)|(0[13-9]|1[012])-30|(0[13578]|1[02])-31)">
             <label>Описание:</label>
             <input type="text" name="description" value="">
             <hr>
