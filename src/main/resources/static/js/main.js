@@ -29,13 +29,16 @@ $('#save-task').click(function() {
 
             var dataArray = $('#task-form form').serializeArray();
 
-
-
             for(i in dataArray) {
                 task[dataArray[i]['name']] = dataArray[i]['value'];
             }
 
+            var span = $("span");
+            document.getElementById("span").textContent = Number(span.text()) + 1;
+
             appendTask(task);
+
+            $("#task-form form")[0].reset();
         }
     });
     return false;
